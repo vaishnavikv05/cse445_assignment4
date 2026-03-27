@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<NationalParks>
+<NationalParks xmlns="https://vaishnavikv05.github.io/cse445_assignment4"
+  xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://vaishnavikv05.github.io/cse445_assignment4 https://vaishnavikv05.github.io/cse445_assignment4/NationalParks.xsd">
   
   <NationalPark Rating="4.9">
     <Name>Grand Canyon</Name>

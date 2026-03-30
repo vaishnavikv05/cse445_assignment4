@@ -4,11 +4,15 @@
   targetNamespace="https://vaishnavikv05.github.io/cse445_assignment4"
   elementFormDefault="qualified">
   <xs:element name="NationalParks" type="NationalParksType"/>
+
+  <!-- can have one or more than one NationalParks inside -->
     <xs:complexType name="NationalParksType">
       <xs:sequence>
         <xs:element name="NationalPark" type="NationalParkType" minOccurs="1" maxOccurs= "unbounded"/>
     </xs:sequence>
     </xs:complexType>
+
+  <!-- each NationalPark can only have one Name and one Address but can have multiple Phones and Rating is optional -->
           <xs:complexType name="NationalParkType">
             <xs:sequence>
               <xs:element name="Name" type="xs:string" minOccurs="1" maxOccurs="1"/>
@@ -17,6 +21,8 @@
             </xs:sequence>
             <xs:attribute name="Rating" type="xs:decimal" use="optional"/>
           </xs:complexType>
+
+  <!-- Address needs to have Number, Street, City, State, Zip, and NearestAirport -->
                 <xs:complexType name="AddressType">
                   <xs:sequence>
                     <xs:element name="Number" type= "xs:string" minOccurs="1" maxOccurs="1"/>

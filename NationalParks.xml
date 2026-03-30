@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Information about 11 national parks -->
+
 <NationalParks xmlns="https://vaishnavikv05.github.io/cse445_assignment4"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="https://vaishnavikv05.github.io/cse445_assignment4 https://vaishnavikv05.github.io/cse445_assignment4/NationalParks.xsd">

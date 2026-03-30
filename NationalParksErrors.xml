@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Information about 11 national parks with errors-->
+
+<!-- Error 1: root element is NationalPark and not NationalParks -->
 <NationalPark xmlns="https://vaishnavikv05.github.io/cse445_assignment4"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="https://vaishnavikv05.github.io/cse445_assignment4 https://vaishnavikv05.github.io/cse445_assignment4/NationalParks.xsd">
@@ -29,6 +32,7 @@
     </Address>
   </NationalPark>
 
+  <!-- Error 2: NearestAirport is missing in the Address -->
    <NationalPark>
     <Name>Lassen Volcanic</Name>
     <Phone>916-789-1274</Phone>
@@ -69,6 +73,7 @@
     </Address>
   </NationalPark>
 
+  <!-- Error 3: closing Address tag is missing -->
    <NationalPark Rating="4.7">
     <Name>Mesa Verde</Name>
     <Phone>970-586-1206</Phone>
@@ -105,6 +110,7 @@
     </Address>
   </NationalPark>
 
+   <!-- Error 4: Phone element is missing -->
    <NationalPark>
     <Name>Big Bend</Name>
     <Address NearestAirport="Midland International">
@@ -128,6 +134,7 @@
     </Address>
   </NationalPark>
 
+   <!-- Error 5: Two name elements are there -->
    <NationalPark>
     <Name>Mountain Rainier</Name>
     <Name>Mountain Rainier Washington</Name>
